@@ -14,14 +14,19 @@ const createUser = async (req: Request, res: Response) => {
       message: "User registered successfully",
       data: result.rows[0],
     });
-  } catch (error: any) {}
+  } catch (error: any) {
+    res.status(500).json({
+      success: false,
+      message: error.message,
+      error: error,
+    });
+  }
 };
 
-
-const getAllusers=async (req: Request, res: Response) => {
+const getAllusers = async (req: Request, res: Response) => {
   try {
-    const result=await userService.getusersfromDB();
-    
+    const result = await userService.getusersfromDB();
+
     res.status(200).json({
       success: true,
       message: "Users retrived successfully",
@@ -34,16 +39,14 @@ const getAllusers=async (req: Request, res: Response) => {
       error: error,
     });
   }
-}
+};
 
-const getSingleuser=async (req: Request, res: Response) => {
+const getSingleuser = async (req: Request, res: Response) => {
   const { id } = req.params;
-//   console.log(id);
+  //   console.log(id);
 
   try {
-    const result= await userService.getSingleuserfromDB(
-        id as string
-    );
+    const result = await userService.getSingleuserfromDB(id as string);
 
     if (result.rows.length === 0) {
       res.status(404).json({
@@ -51,14 +54,12 @@ const getSingleuser=async (req: Request, res: Response) => {
         message: "user not found",
         data: null,
       });
-
-     
     }
-     return res.status(200).json({
-        success: true,
-        message: "user retrived",
-        data: result.rows[0],
-      });
+    return res.status(200).json({
+      success: true,
+      message: "user retrived",
+      data: result.rows[0],
+    });
   } catch (error: any) {
     res.status(500).json({
       success: false,
@@ -66,10 +67,10 @@ const getSingleuser=async (req: Request, res: Response) => {
       error: error,
     });
   }
-}
-
-
+};
 
 export const userController = {
-  createUser,getAllusers,getSingleuser
+  createUser,
+  getAllusers,
+  getSingleuser,
 };

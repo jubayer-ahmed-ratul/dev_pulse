@@ -1,4 +1,4 @@
-import config from "./config";
+
 import express, {
   type Application,
   type Request,
@@ -6,21 +6,13 @@ import express, {
 } from "express";
 
 
-
-import { pool } from "./db";
 import { userRoute } from "./modules/user/user.routes";
+import { authRoute } from "./modules/auth/auth.route";
 const app: Application = express();
-
 
 app.use(express.json());
 app.use(express.text());
 app.use(express.urlencoded({ extended: true }));
-
-
-
-
-
-
 
 app.get("/", (req: Request, res: Response) => {
   //   res.send('dev pulse server is running')
@@ -31,17 +23,15 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 //ADD USER (POST)
-app.use('/api/auth/signup',userRoute)
-
+app.use("/api/auth/signup", userRoute);
 
 //GETTING ALL USERS
-app.get("/api/users", userRoute)
- 
+app.get("/api/users", userRoute);
 
 //GETTING single USERS
-app.get("/api/users/:id", userRoute)
+app.get("/api/users/:id", userRoute);
 
-
-
+//LOGIN USER
+app.use("/api/auth",authRoute)
 
 export default app;
