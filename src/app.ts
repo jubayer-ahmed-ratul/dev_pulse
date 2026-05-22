@@ -8,6 +8,7 @@ import express, {
 
 import { userRoute } from "./modules/user/user.routes";
 import { authRoute } from "./modules/auth/auth.route";
+import { issueroute } from "./modules/issues/issue.routes";
 const app: Application = express();
 
 app.use(express.json());
@@ -22,16 +23,21 @@ app.get("/", (req: Request, res: Response) => {
   });
 });
 
-//ADD USER (POST)
-app.use("/api/auth/signup", userRoute);
 
-//GETTING ALL USERS
-app.get("/api/users", userRoute);
 
-//GETTING single USERS
-app.get("/api/users/:id", userRoute);
+//USERS
+app.use("/api/users", userRoute);
 
-//LOGIN USER
+//ISSUES RELATED APIS
+
+app.use("/api/issues", issueroute);
+
+//AUTH
 app.use("/api/auth",authRoute)
+
+
+
+
+
 
 export default app;

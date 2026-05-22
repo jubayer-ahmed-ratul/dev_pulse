@@ -5,9 +5,9 @@ const router = Router();
 
 router.post("/", userController.createUser);
 
-router.get("/api/users",userController.getAllusers );
+router.get("/",userController.getAllusers );
 
-router.get("/api/users/:id",userController.getSingleuser );
+router.get("/:id",userController.getSingleuser );
 
 
 export const userRoute = router;
