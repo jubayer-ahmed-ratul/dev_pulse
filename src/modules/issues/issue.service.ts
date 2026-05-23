@@ -1,10 +1,8 @@
-import type { Request, Response } from "express";
 import { pool } from "../../db";
 import type { TypeofIssue } from "./issue.interface";
 
-const createIssuesIntoDB = async (payload: TypeofIssue) => {
+const createIssuesIntoDB = async (payload: TypeofIssue, reporter_id: number) => {
   const { title, description, type } = payload;
-  const reporter_id = 1;
 
   const result = await pool.query(
     `

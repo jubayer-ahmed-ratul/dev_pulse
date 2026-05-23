@@ -72,3 +72,53 @@ Method -> GET-Time -> 1779504305682 -URL -> /api/issues/1
 Method -> GET-Time -> 1779504443981 -URL -> /api/issues/1
 
 Method -> GET-Time -> 1779504452161 -URL -> /api/issues/1
+
+Method -> GET-Time -> 1779504939667 -URL -> /api/issues/1
+
+Method -> POST-Time -> 1779505269805 -URL -> /api/auth/signup%0A
+
+Method -> POST-Time -> 1779505282007 -URL -> /api/auth/signup
+
+Method -> POST-Time -> 1779505293545 -URL -> /api/auth/signup
+
+Method -> POST-Time -> 1779505364118 -URL -> /api/auth/login
+
+Method -> POST-Time -> 1779505466306 -URL -> /api/issues
+
+Method -> POST-Time -> 1779505501664 -URL -> /api/issues
+
+Method -> POST-Time -> 1779505507791 -URL -> /api/issues
+
+Method -> POST-Time -> 1779505521056 -URL -> /api/issues
+
+Method -> POST-Time -> 1779505528575 -URL -> /api/issues
+
+Method -> GET-Time -> 1779505580777 -URL -> /api/issues
+
+Method -> GET-Time -> 1779505629989 -URL -> /api/issues/1
+
+Method -> PATCH-Time -> 1779505680362 -URL -> /api/issues/1
+
+Method -> PATCH-Time -> 1779505719821 -URL -> /api/issues/1
+
+Method -> PATCH-Time -> 1779505736645 -URL -> /api/issues/7
+
+Method -> PATCH-Time -> 1779505743957 -URL -> /api/issues/2
+
+Method -> PATCH-Time -> 1779505746774 -URL -> /api/issues/3
+
+Method -> DELETE-Time -> 1779505791375 -URL -> /api/issues/3
+
+Method -> DELETE-Time -> 1779505801761 -URL -> /api/issues/3
+
+Method -> POST-Time -> 1779505844938 -URL -> /api/auth/login
+
+Method -> POST-Time -> 1779505870648 -URL -> /api/auth/signup
+
+Method -> POST-Time -> 1779505892510 -URL -> /api/auth/signup
+
+Method -> POST-Time -> 1779505906319 -URL -> /api/auth/login
+
+Method -> PATCH-Time -> 1779505925165 -URL -> /api/issues/3
+
+Method -> PATCH-Time -> 1779505938876 -URL -> /api/issues/1
