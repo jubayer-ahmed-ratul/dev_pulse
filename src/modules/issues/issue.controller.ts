@@ -1,5 +1,6 @@
 import type { Request, Response } from "express";
 import { issueService } from "./issue.service";
+import { userService } from "../user/user.service";
 
 const createIssues = async (req: Request, res: Response) => {
   // console.log(req.body);
@@ -22,9 +23,8 @@ const createIssues = async (req: Request, res: Response) => {
   }
 };
 
-const getIssues=async(req:Request,res:Response)=>{
-
-     try {
+const getIssues = async (req: Request, res: Response) => {
+  try {
     const result = await issueService.GetIssuesfromDB();
 
     res.status(201).json({
@@ -39,8 +39,7 @@ const getIssues=async(req:Request,res:Response)=>{
       error: error,
     });
   }
-
-}
+};
 
 const getSingleissue = async (req: Request, res: Response) => {
   const { id } = req.params;
@@ -70,7 +69,37 @@ const getSingleissue = async (req: Request, res: Response) => {
   }
 };
 
+const updateIssue = async (req: Request, res: Response) => {
+  const { id } = req.params;
+
+  try {
+    const result = await issueService.updateIssuefromDB(req.body, id as string);
+
+    if (result.rows.length === 0) {
+      res.status(404).json({
+        success: false,
+        message: "user not found",
+      });
+      return;
+    }
+
+    res.status(200).json({
+      success: true,
+      message: "issue updated successfully",
+      data: result.rows[0],
+    });
+  } catch (error: any) {
+    res.status(500).json({
+      success: false,
+      message: error.message,
+      error: error,
+    });
+  }
+};
 
 export const issueController = {
-  createIssues,getIssues,getSingleissue
+  createIssues,
+  getIssues,
+  getSingleissue,
+  updateIssue
 };
