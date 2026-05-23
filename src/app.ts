@@ -9,11 +9,14 @@ import express, {
 import { userRoute } from "./modules/user/user.routes";
 import { authRoute } from "./modules/auth/auth.route";
 import { issueroute } from "./modules/issues/issue.routes";
+import logger from "./middlewire/logger";
 const app: Application = express();
 
 app.use(express.json());
 app.use(express.text());
 app.use(express.urlencoded({ extended: true }));
+
+app.use(logger)
 
 app.get("/", (req: Request, res: Response) => {
   //   res.send('dev pulse server is running')

@@ -1,0 +1,74 @@
+
+Method -> GET-Time -> 1779502704599 -URL -> /
+
+Method -> GET-Time -> 1779502999380 -URL -> /api/issues
+
+Method -> GET-Time -> 1779503011911 -URL -> /api/issues/1
+
+Method -> PATCH-Time -> 1779503053933 -URL -> /api/issues/1
+
+Method -> PATCH-Time -> 1779503071228 -URL -> /api/issues/1
+
+Method -> GET-Time -> 1779503104532 -URL -> /api/issues
+
+Method -> GET-Time -> 1779503113806 -URL -> /api/issues
+
+Method -> GET-Time -> 1779503422450 -URL -> /api/issues/1
+
+Method -> POST-Time -> 1779503562725 -URL -> /api/auth/signup
+
+Method -> POST-Time -> 1779503596605 -URL -> /api/auth/signup
+
+Method -> POST-Time -> 1779503644827 -URL -> /api/auth/signup
+
+Method -> GET-Time -> 1779503664043 -URL -> /api/users
+
+Method -> GET-Time -> 1779503753081 -URL -> //api/auth/signup
+
+Method -> GET-Time -> 1779503757672 -URL -> /api/auth/signup
+
+Method -> GET-Time -> 1779503902259 -URL -> /api/auth/signup
+
+Method -> POST-Time -> 1779503920539 -URL -> /api/auth/signup
+
+Method -> POST-Time -> 1779503947514 -URL -> /api/auth/login
+
+Method -> GET-Time -> 1779504046741 -URL -> /api/users
+
+Method -> GET-Time -> 1779504059740 -URL -> /api/users
+
+Method -> GET-Time -> 1779504087591 -URL -> /api/users
+
+Method -> GET-Time -> 1779504111025 -URL -> /api/users
+
+Method -> GET-Time -> 1779504125230 -URL -> /api/issues
+
+Method -> GET-Time -> 1779504205804 -URL -> /
+
+Method -> GET-Time -> 1779504209729 -URL -> /issues
+
+Method -> GET-Time -> 1779504212140 -URL -> /issues
+
+Method -> GET-Time -> 1779504220460 -URL -> /users
+
+Method -> GET-Time -> 1779504220798 -URL -> /users
+
+Method -> GET-Time -> 1779504230180 -URL -> /api/issues
+
+Method -> GET-Time -> 1779504243003 -URL -> /users
+
+Method -> GET-Time -> 1779504261047 -URL -> /
+
+Method -> GET-Time -> 1779504265674 -URL -> /api/users
+
+Method -> GET-Time -> 1779504272792 -URL -> /api/issues
+
+Method -> GET-Time -> 1779504289821 -URL -> /api/issues
+
+Method -> GET-Time -> 1779504301124 -URL -> /api/issues/1
+
+Method -> GET-Time -> 1779504305682 -URL -> /api/issues/1
+
+Method -> GET-Time -> 1779504443981 -URL -> /api/issues/1
+
+Method -> GET-Time -> 1779504452161 -URL -> /api/issues/1
