@@ -2,7 +2,7 @@
 
 An internal tech issue and feature tracker for software teams. Teams can report bugs, suggest features, and coordinate resolutions through a role-based REST API.
 
-**Live URL:** _Not deployed_
+**Live URL:** (https://devpulsee-delta.vercel.app/)
 
 ---
 
