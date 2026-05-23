@@ -122,3 +122,23 @@ Method -> POST-Time -> 1779505906319 -URL -> /api/auth/login
 Method -> PATCH-Time -> 1779505925165 -URL -> /api/issues/3
 
 Method -> PATCH-Time -> 1779505938876 -URL -> /api/issues/1
+
+Method -> GET-Time -> 1779509452054 -URL -> /api/issue
+
+Method -> GET-Time -> 1779509461321 -URL -> /api/issues
+
+Method -> GET-Time -> 1779509468861 -URL -> /api/issues/3
+
+Method -> DELETE-Time -> 1779509520057 -URL -> /api/issues/1
+
+Method -> DELETE-Time -> 1779509524387 -URL -> /api/issues/3
+
+Method -> POST-Time -> 1779509535900 -URL -> /api/issues
+
+Method -> POST-Time -> 1779509541786 -URL -> /api/issues
+
+Method -> POST-Time -> 1779509551752 -URL -> /api/issues
+
+Method -> GET-Time -> 1779509583018 -URL -> /api/issues/1
+
+Method -> GET-Time -> 1779509586603 -URL -> /api/issues/4

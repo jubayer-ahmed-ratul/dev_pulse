@@ -3,23 +3,23 @@ import { pool } from "../../db";
 import type { typeofUser } from "./user.interface";
 
 const createUserIntoDB = async (payload: typeofUser) => {
-  const { name, email, password } = payload;
-  const hasPassword= await bcrypt.hash(password,10);
+  const { name, email, password, role } = payload;
+  const hasPassword = await bcrypt.hash(password, 10);
 
   const result = await pool.query(
     `
-        INSERT INTO users(name,email,password) VALUES($1,$2,$3) RETURNING*
+        INSERT INTO users(name, email, password, role) VALUES($1,$2,$3,$4) RETURNING*
         `,
-    [name, email, hasPassword],
+    [name, email, hasPassword, role ?? "contributor"],
   );
   delete result.rows[0].password;
- 
+
   return result;
 };
 
 const getusersfromDB = async () => {
   const result = await pool.query(`
-            SELECT * FROM users
+            SELECT id, name, email, role, created_at, updated_at FROM users
             `);
   return result;
 };
@@ -27,8 +27,7 @@ const getusersfromDB = async () => {
 const getSingleuserfromDB = async (id: string) => {
   const result = await pool.query(
     `
-      SELECT * FROM users WHERE id=$1
-
+      SELECT id, name, email, role, created_at, updated_at FROM users WHERE id=$1
 `,
     [id],
   );
