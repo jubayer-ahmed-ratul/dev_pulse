@@ -142,3 +142,23 @@ Method -> POST-Time -> 1779509551752 -URL -> /api/issues
 Method -> GET-Time -> 1779509583018 -URL -> /api/issues/1
 
 Method -> GET-Time -> 1779509586603 -URL -> /api/issues/4
+
+Method -> GET-Time -> 1779528914866 -URL -> /
+
+Method -> GET-Time -> 1779528915393 -URL -> /favicon.ico
+
+Method -> GET-Time -> 1779528920684 -URL -> /api/users
+
+Method -> GET-Time -> 1779528926164 -URL -> /api/issues
+
+Method -> GET-Time -> 1779529366135 -URL -> /api/issues
+
+Method -> GET-Time -> 1779529374891 -URL -> /api/users
+
+Method -> GET-Time -> 1779529432693 -URL -> /api/users
+
+Method -> POST-Time -> 1779529935621 -URL -> /api/auth/login
+
+Method -> GET-Time -> 1779531112389 -URL -> /api/users
+
+Method -> GET-Time -> 1779531128842 -URL -> /api/users

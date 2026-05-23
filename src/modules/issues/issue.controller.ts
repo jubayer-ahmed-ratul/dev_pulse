@@ -61,6 +61,7 @@ const getIssues = async (req: Request, res: Response) => {
 
     res.status(200).json({
       success: true,
+      message: "Issues retrived successfully",
       data,
     });
   } catch (error: any) {
@@ -93,6 +94,7 @@ const getSingleissue = async (req: Request, res: Response) => {
 
     res.status(200).json({
       success: true,
+      message: "Issue retrived successfully",
       data: {
         ...rest,
         reporter: reporterResult.rows[0] ?? null,
